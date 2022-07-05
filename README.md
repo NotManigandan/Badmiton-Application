@@ -1,1 +1,1 @@
-# Social-Media-Application
+# Badmiton-Application
