@@ -1,147 +1,150 @@
-body{
+body {
   background-image: url("https://images.unsplash.com/photo-1617696618050-b0fef0c666af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8YmFkbWludG9ufGVufDB8fDB8fA%3D%3D&w=1000&q=80");
 }
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
 
 * {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .login-signup {
-    width: 400px;
-    margin-top: 8.5%;
-    margin-left: 70%;
+  width: 400px;
+  margin-top: 8.5%;
+  margin-left: 70%;
 }
 
 .tabs ul {
-    display: flex;
-    background: #fbfbfb;
-    border: 1px solid #dddddd;
+  display: flex;
+  background: #fbfbfb;
+  border: 1px solid #dddddd;
+  margin: 0px;
 }
 
 .tabs ul li {
-    width: 250px;
-    padding: 15px;
-    border-right: 1px solid #dddddd;
-    text-align: center;
-    color: #3b3b3b;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 3px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    position: relative;
+  width: 250px;
+  padding: 15px;
+  border-right: 1px solid #dddddd;
+  text-align: center;
+  color: #3b3b3b;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
 }
 
 .tabs ul:first-child {
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: none;
 }
 
 .tabs ul:nth-child(1) {
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: none;
 }
 
 .tabs ul li:last-child {
-    border-right: 0px;
+  border-right: 0px;
 }
 
 .tabs ul li:before {
-    content: "";
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: #028f68;
-    opacity: 0;
-    transition: all 0.2s ease;
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #028f68;
+  opacity: 0;
+  transition: all 0.2s ease;
 }
 
 .tabs ul li:hover,
 .tabs ul li.active {
-    background: #e8f5f1;
-    color: #028f68;
+  background: #e8f5f1;
+  color: #028f68;
 }
 
 .tabs ul li:hover:before,
 .tabs ul li.active:before {
-    opacity: 1;
+  opacity: 1;
 }
 
 .content {
-    background: #fbfbfb;
-    border: 1px solid #dddddd;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-top: none;
-    left: 1px;
-    bottom: 1px;
-    padding: 20px;
+  background: #fbfbfb;
+  border: 1px solid #dddddd;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top: none;
+  left: 1px;
+  bottom: 1px;
+  padding: 20px;
 }
 
 .tab_wrap .title {
-    font-size: 20px;
-    margin-bottom: 15px;
-    font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: 600;
 }
 
 .tab_wrap .tab_content {
-    font-size: 14px;
-    line-height: 22px;
-    margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 10px;
 }
 
 /* login page */
-.login input[type="email"]{
+.login input[type="email"] {
   width: 70%;
   margin-bottom: 5px;
   margin-left: 25%;
 }
-.login input[type="password"]{
+
+.login input[type="password"] {
   width: 70%;
   margin-bottom: 5px;
-    margin-left: 25%;
+  margin-left: 25%;
 }
 
 
 
 /* signup page */
-.signup input[type="text"]{
+.signup input[type="text"] {
   width: 70%;
   margin-bottom: 5px;
-    margin-left: 25%;
+  margin-left: 25%;
 }
 
-.signup input[type="email"]{
+.signup input[type="email"] {
   width: 70%;
   margin-bottom: 5px;
-    margin-left: 25%;
+  margin-left: 25%;
 }
 
-.signup input[type="password"]{
+.signup input[type="password"] {
   width: 70%;
   margin-bottom: 5px;
-    margin-left: 25%;
+  margin-left: 25%;
 }
-.signup input[type="number"]{
+
+.signup input[type="number"] {
   width: 70%;
   margin-bottom: 5px;
-    margin-left: 25%;
+  margin-left: 25%;
 }
 
 
 
 /* login and signup btn */
-.btn{
-    margin-left: 40%;
+.btn {
+  margin-left: 40%;
 }
 
 /* seperation line */
@@ -153,15 +156,15 @@ body{
 
 /* google login */
 .col {
-    width: 100%;
-    margin-top: 6px;
+  width: 100%;
+  margin-top: 6px;
 }
 
 .google {
   color: green;
 }
 
-.btng{
+.btng {
   width: 70%;
   border-radius: 1px;
   border: none;
@@ -173,7 +176,7 @@ body{
   margin-left: 15%
 }
 
-.btnsetting{
+.btnsetting {
   width: 100%;
   padding: 12px;
   display: inline-block;
