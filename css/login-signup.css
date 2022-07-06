@@ -1,3 +1,7 @@
+body{
+  background-image: url("https://images.unsplash.com/photo-1617696618050-b0fef0c666af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8YmFkbWludG9ufGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+}
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
 
 * {
@@ -10,7 +14,8 @@
 
 .login-signup {
     width: 400px;
-    margin: 150px 1200px;
+    margin-top: 8.5%;
+    margin-left: 70%;
 }
 
 .tabs ul {
@@ -92,4 +97,92 @@
     font-size: 14px;
     line-height: 22px;
     margin-bottom: 10px;
+}
+
+/* login page */
+.login input[type="email"]{
+  width: 70%;
+  margin-bottom: 5px;
+  margin-left: 25%;
+}
+.login input[type="password"]{
+  width: 70%;
+  margin-bottom: 5px;
+    margin-left: 25%;
+}
+
+
+
+/* signup page */
+.signup input[type="text"]{
+  width: 70%;
+  margin-bottom: 5px;
+    margin-left: 25%;
+}
+
+.signup input[type="email"]{
+  width: 70%;
+  margin-bottom: 5px;
+    margin-left: 25%;
+}
+
+.signup input[type="password"]{
+  width: 70%;
+  margin-bottom: 5px;
+    margin-left: 25%;
+}
+.signup input[type="number"]{
+  width: 70%;
+  margin-bottom: 5px;
+    margin-left: 25%;
+}
+
+
+
+/* login and signup btn */
+.btn{
+    margin-left: 40%;
+}
+
+/* seperation line */
+.vl {
+  border: 2px solid #ddd;
+  height: 1px;
+  margin-top: 20px;
+}
+
+/* google login */
+.col {
+    width: 100%;
+    margin-top: 6px;
+}
+
+.google {
+  color: green;
+}
+
+.btng{
+  width: 70%;
+  border-radius: 1px;
+  border: none;
+  margin: 5px 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-left: 15%
+}
+
+.btnsetting{
+  width: 100%;
+  padding: 12px;
+  display: inline-block;
+  font-size: 17px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btnsetting:hover {
+  opacity: 1;
+  color: black;
 }
