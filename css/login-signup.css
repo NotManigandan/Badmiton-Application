@@ -85,107 +85,149 @@ body {
   border-top: none;
   left: 1px;
   bottom: 1px;
-  padding: 20px;
-}
-
-.tab_wrap .title {
-  font-size: 20px;
-  margin-bottom: 15px;
-  font-weight: 600;
+  padding: 10px 20px 20px 20px;
 }
 
 .tab_wrap .tab_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-size: 14px;
   line-height: 22px;
   margin-bottom: 10px;
 }
 
-/* login page */
-.login input[type="email"] {
-  width: 70%;
-  margin-bottom: 5px;
-  margin-left: 25%;
+/* Input field CSS */
+.tab_wrap .tab_content .input-field {
+  position: relative;
+  font-size: 14px;
+  border-top: 20px solid transparent;
+  margin-bottom: 8px;
+  --field-padding: 12px;
 }
 
-.login input[type="password"] {
-  width: 70%;
-  margin-bottom: 5px;
-  margin-left: 25%;
-}
-
-
-
-/* signup page */
-.signup input[type="text"] {
-  width: 70%;
-  margin-bottom: 5px;
-  margin-left: 25%;
-}
-
-.signup input[type="email"] {
-  width: 70%;
-  margin-bottom: 5px;
-  margin-left: 25%;
-}
-
-.signup input[type="password"] {
-  width: 70%;
-  margin-bottom: 5px;
-  margin-left: 25%;
-}
-
-.signup input[type="number"] {
-  width: 70%;
-  margin-bottom: 5px;
-  margin-left: 25%;
-}
-
-
-
-/* login and signup btn */
-.btn {
-  margin-left: 40%;
-}
-
-/* seperation line */
-.vl {
-  border: 2px solid #ddd;
-  height: 1px;
-  margin-top: 20px;
-}
-
-/* google login */
-.col {
-  width: 100%;
-  margin-top: 6px;
-}
-
-.google {
-  color: green;
-}
-
-.btng {
-  width: 70%;
-  border-radius: 1px;
+.tab_wrap .tab_content .input-field.one input {
   border: none;
-  margin: 5px 0;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  margin-left: 15%
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
+  padding: var(--field-padding);
+  border: 2px solid #ddd;
+  border-radius: 3px;
+  width: 325px;
+  transition: border-color 0.3s ease;
+  outline: none;
 }
 
-.btnsetting {
-  width: 100%;
+.tab_wrap .tab_content .input-field.one input+.placeholder {
+  position: absolute;
+  left: 8px;
+  width: calc(100% - (var(--field-padding) * 2));
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  top: 22px;
+  line-height: 100%;
+  transform: translateY(-50%);
+  padding: 0 5px;
+  color: #aaa;
+  transition:
+    top 0.3s ease,
+    color 0.3s ease,
+    font-size 0.3s ease;
+}
+
+.tab_wrap .tab_content .input-field.one input:not(:placeholder-shown),
+.tab_wrap .tab_content .input-field.one input:focus {
+  border-color: #028f68;
+  transition-delay: 0.1s
+}
+
+.tab_wrap .tab_content .input-field.one input:not(:placeholder-shown)+.placeholder,
+.tab_wrap .tab_content .input-field.one input:focus+.placeholder {
+  top: 0;
+  font-size: 10px;
+  color: #028f68;
+  background: #fff;
+  width: auto
+}
+
+
+.remember-forgot-agree {
   padding: 12px;
-  display: inline-block;
-  font-size: 17px;
-  text-decoration: none;
-  text-align: center;
+  display: flex;
+  flex-direction: row;
 }
 
-.btnsetting:hover {
-  opacity: 1;
-  color: black;
+.remember-forgot-agree input[type='checkbox'] {
+  margin-right: 5px;
+}
+
+.remember-forgot-agree a {
+  margin-left: 100px;
+  text-decoration: none;
+}
+
+
+/* Button CSS */
+.button-36 {
+  background-image: linear-gradient(92.88deg, #02a87a 9.16%, #028f68 43.89%, #029d72 64.72%);
+  border-radius: 5px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-size: 16px;
+  font-weight: 500;
+  height: 45px;
+  width: 325px;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all .5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-36:hover {
+  box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+  transition-duration: .1s;
+}
+
+/* Google Login/Signup Button */
+.login-with-google-btn {
+  transition: background-color .3s, box-shadow .3s;
+  padding: 12px 16px 12px 42px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 1px 1px rgba(0, 0, 0, .25);
+  margin-top: 20px;
+  color: #757575;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMTcuNiA5LjJsLS4xLTEuOEg5djMuNGg0LjhDMTMuNiAxMiAxMyAxMyAxMiAxMy42djIuMmgzYTguOCA4LjggMCAwIDAgMi42LTYuNnoiIGZpbGw9IiM0Mjg1RjQiIGZpbGwtcnVsZT0ibm9uemVybyIvPjxwYXRoIGQ9Ik05IDE4YzIuNCAwIDQuNS0uOCA2LTIuMmwtMy0yLjJhNS40IDUuNCAwIDAgMS04LTIuOUgxVjEzYTkgOSAwIDAgMCA4IDV6IiBmaWxsPSIjMzRBODUzIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNNCAxMC43YTUuNCA1LjQgMCAwIDEgMC0zLjRWNUgxYTkgOSAwIDAgMCAwIDhsMy0yLjN6IiBmaWxsPSIjRkJCQzA1IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNOSAzLjZjMS4zIDAgMi41LjQgMy40IDEuM0wxNSAyLjNBOSA5IDAgMCAwIDEgNWwzIDIuNGE1LjQgNS40IDAgMCAxIDUtMy43eiIgZmlsbD0iI0VBNDMzNSIgZmlsbC1ydWxlPSJub256ZXJvIi8+PHBhdGggZD0iTTAgMGgxOHYxOEgweiIvPjwvZz48L3N2Zz4=);
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 12px 11px;
+}
+
+.login-with-google-btn:hover {
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 2px 4px rgba(0, 0, 0, .25);
+}
+
+.login-with-google-btn:active {
+  background-color: #eeeeee;
+}
+
+.login-with-google-btn:focus {
+  outline: none;
+  box-shadow:
+    0 -1px 0 rgba(0, 0, 0, .04),
+    0 2px 4px rgba(0, 0, 0, .25),
+    0 0 0 3px #c8dafc;
 }
